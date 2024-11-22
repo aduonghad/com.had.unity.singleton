@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-#region MonoBehaviour
 /** <summary> Base Singleton class which is MonoBehavior </summary> */
 public abstract class SingletonMono<T> : MonoBehaviour where T : Component {
     protected static T instance;
@@ -144,7 +143,6 @@ public class SingletonResourceAlive<T> : SingletonResource<T> where T : Componen
         base.Awake();
     }
 }
-#endregion
 
 /** <summary> 
  * <para> "Instance" = Instantiate from Resources folder when be called at runtime.</para>
